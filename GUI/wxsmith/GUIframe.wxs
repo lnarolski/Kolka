@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="GUIFrame">
+		<title>Start gry</title>
+		<centered>1</centered>
+		<icon>C:\Users\Łukasz\Box Sync\GUI\bin\Debug\Osmos.ico</icon>
+		<size>423,228</size>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_FRAME_STYLE|wxRESIZE_BORDER|wxMAXIMIZE_BOX</style>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>Ustawienia bazy danych</label>
+			<pos>248,120</pos>
+			<size>136,88</size>
+			<hidden>1</hidden>
+			<handler function="OnButton1Click1" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
+			<label>GRAJ!!!</label>
+			<pos>40,120</pos>
+			<size>136,88</size>
+			<font>
+				<size>10</size>
+				<style>normal</style>
+				<weight>normal</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Arial</face>
+			</font>
+			<handler function="OnButton2Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxChoice" name="ID_CHOICE1" variable="Choice1" member="yes">
+			<content>
+				<item>0</item>
+				<item>1</item>
+				<item>2</item>
+				<item>3</item>
+				<item>4</item>
+				<item>5</item>
+				<item>6</item>
+			</content>
+			<selection>1</selection>
+			<pos>40,64</pos>
+			<size>136,21</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>Ilosc przeciwnikow:</label>
+			<pos>56,40</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>Ilosc pozostalych obiektow:</label>
+			<pos>248,40</pos>
+			<size>160,13</size>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE2" variable="Choice2" member="yes">
+			<content>
+				<item>10</item>
+				<item>20</item>
+				<item>30</item>
+				<item>40</item>
+				<item>50</item>
+				<item>60</item>
+				<item>70</item>
+				<item>80</item>
+				<item>90</item>
+				<item>100</item>
+			</content>
+			<selection>0</selection>
+			<pos>248,64</pos>
+			<size>136,21</size>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="CheckBox1" member="yes">
+			<label>Uzyj bazy danych</label>
+			<pos>264,96</pos>
+			<handler function="OnCheckBox1Click" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX2" variable="CheckBox2" member="yes">
+			<label>Wczytaj gre</label>
+			<pos>72,96</pos>
+			<handler function="OnCheckBox2Click" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no" />
+		<object class="wxStatusBar" name="wxID_ANY" variable="StatusBar1" member="no">
+			<fields>1</fields>
+			<widths>0</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
